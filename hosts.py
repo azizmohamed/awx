@@ -1,7 +1,30 @@
 #!/usr/bin/env python
 
 def main():
-    print("34.211.11.88")
+    return {
+  "development": {
+    "hosts": [
+      "prometheus",
+      "rotarran"
+    ],
+    "vars": {}
+  },
+  "production": {
+    "hosts": [
+      "talvath",
+      "defiant"
+    ],
+    "vars": {}
+  },
+  "_meta": {
+    "hostvars": {
+      "defiant": {},
+      "rotarran": {},
+      "prometheus": {}, 
+      "talvath": {}
+    }
+  }
+}
 
 
 if __name__ == '__main__':
